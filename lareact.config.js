@@ -1,7 +1,8 @@
 const Config = {
     basePath: 'src',
-    templates: {
-        component: '../templates/component',
-        container: '../templates/component'
-    }
+    commands: [
+        { action: 'component' },
+        { action: 'container', template: 'component' }
+    ],
+    namingConvetion: 'snake_case'
 }
